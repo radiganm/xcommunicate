@@ -1,4 +1,6 @@
-#+TITLE: Xcommunicate (Xcom) an X11 communication framework based on StumpWM and Xephyr
+#+TITLE: Xcommunicate (Xcom)
 #+AUTHOR: Mac Radigan
+
+# an X11 communication framework based on StumpWM and Xephyr
 
  # *EOF* 
