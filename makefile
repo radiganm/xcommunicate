@@ -4,14 +4,14 @@
 ## Copyright 2016 Mac Radigan
 ## All Rights Reserved
 
-.PHONY: build clean
+.PHONY: build clean run shell
 
 name = radiganm/dxs-demo
 
 build: 
 	docker build -t $(name) .
 
-demo: 
+run: 
 	Xephyr -ac -br -resizeable -terminate -reset :3 2>/dev/null 1>/dev/null &
 	docker run -it --ipc=host --pid=host -e DISPLAY=:3 -e $(XAUTHORITY) -v /tmp:/tmp --security-opt seccomp=unconfined $(name) demo
 
