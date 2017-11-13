@@ -18,7 +18,7 @@
   {
     >&2 cat <<-EOT 
 		$f [args]
-			  demo                  - run the demo
+			  start                  - opens the display
 EOT
     exit ${S__SUCCESS}
   }
@@ -89,7 +89,7 @@ EOT
 
   cmd=$1; shift
   case $cmd in
-    demo)
+    start)
       run
       ;;
     util)
