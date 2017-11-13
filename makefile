@@ -6,7 +6,7 @@
 
 .PHONY: build clean run shell
 
-name = radiganm/dxs-demo
+name = radiganm/xcom
 
 build: 
 	docker build -t $(name) .
